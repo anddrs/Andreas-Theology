@@ -3,104 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Theology - Theologische Studien</title>
+    <title>Andreas' Theologische Erklärungen</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #f5f5f5;
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
             text-align: center;
-            border-bottom: 3px solid #4CAF50;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #3498db;
         }
-        h2 {
-            color: #4CAF50;
-            margin-top: 30px;
-        }
-        .studies-grid {
-            display: grid;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .study-card {
-            background-color: #f9f9f9;
+        .intro {
+            background: white;
             padding: 20px;
-            border-radius: 5px;
-            border-left: 4px solid #4CAF50;
-            transition: transform 0.2s;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
-        .study-card:hover {
+        .page-list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .page-item {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .page-item:hover {
+            background: #e9ecef;
             transform: translateX(5px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .study-card h3 {
-            margin-top: 0;
-            color: #333;
+        .page-item h3 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
         }
-        .study-card a {
-            color: #4CAF50;
+        .page-item a {
             text-decoration: none;
+            color: #3498db;
             font-weight: bold;
         }
-        .study-card a:hover {
+        .page-item a:hover {
             text-decoration: underline;
         }
-        .welcome {
+        .footer {
             text-align: center;
+            margin-top: 40px;
+            padding: 20px;
             color: #666;
-            margin: 20px 0;
+        }
+        .bible-verse {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
             font-style: italic;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Andreas Theology</h1>
-        <p class="welcome">Willkommen zu meinen theologischen Studien und Auslegungen</p>
+    <h1>📖 Andreas' Theologische Erklärungen</h1>
+    
+    <div class="intro">
+        <h2>Willkommen!</h2>
+        <p>Diese Seite enthält kindgerechte Erklärungen zu verschiedenen theologischen Themen, 
+        insbesondere zu unterschiedlichen Auslegungen der biblischen Prophetie. Alle Materialien 
+        wurden erstellt, um meiner Tochter komplexe theologische Konzepte verständlich zu machen.</p>
         
-        <h2>Verfügbare Studien:</h2>
+        <div class="bible-verse">
+            <p>"Alle Schrift ist von Gott eingegeben und nützlich zur Lehre, zur Überführung, 
+            zur Zurechtweisung, zur Unterweisung in der Gerechtigkeit"</p>
+            <p><strong>2. Timotheus 3,16</strong></p>
+        </div>
+    </div>
+    
+    <div class="page-list">
+        <h2>📚 Verfügbare Themen</h2>
         
-        <div class="studies-grid">
-            <div class="study-card">
-                <h3>📖 Offenbarung 20 - Erklärung</h3>
-                <p>Eine detaillierte Auslegung des 20. Kapitels der Offenbarung mit Fokus auf das Tausendjährige Reich.</p>
-                <a href="offenbarung-20-erklaerung.html">Zur Studie →</a>
-            </div>
-            
-            <div class="study-card">
-                <h3>⏰ Die Trübsalszeit - Erklärung</h3>
-                <p>Eine umfassende Betrachtung der Trübsalszeit und ihrer Bedeutung in der biblischen Prophetie.</p>
-                <a href="truebsalszeit-erklaerung.html">Zur Studie →</a>
-            </div>
-            
-            <div class="study-card">
-                <h3>🦁 Daniel 7 - Interpretation</h3>
-                <p>Die Auslegung der vier Tiere und des Menschensohns in Daniels Vision.</p>
-                <a href="daniel-7-interpretation.html">Zur Studie →</a>
-            </div>
-            
-            <div class="study-card">
-                <h3>🔄 Endzeit-Vergleich</h3>
-                <p>Ein systematischer Vergleich verschiedener Endzeit-Perspektiven und ihrer biblischen Grundlagen.</p>
-                <a href="endzeit-vergleich.html">Zur Studie →</a>
-            </div>
+        <div class="page-item">
+            <h3>Die Bindung Satans (Offenbarung 20:2-3)</h3>
+            <p>Vergleich der amillennialistischen und dispensationalistischen Sichtweise zur Bindung Satans. 
+            Wann wurde/wird Satan gebunden? Was bedeuten die 1000 Jahre?</p>
+            <a href="offenbarung-20-erklaerung.html">→ Zur Erklärung</a>
         </div>
         
-        <footer style="margin-top: 50px; text-align: center; color: #666; border-top: 1px solid #ddd; padding-top: 20px;">
-            <p>© 2024 Andreas Theology - Alle theologischen Studien basieren auf der Heiligen Schrift</p>
-        </footer>
+        <div class="page-item">
+            <h3>Die große Trübsal</h3>
+            <p>Wann ist oder war die Trübsalszeit? Vier verschiedene christliche Sichtweisen 
+            kindgerecht erklärt mit interaktivem Quiz.</p>
+            <a href="truebsalszeit-erklaerung.html">→ Zur Erklärung</a>
+        </div>
+        
+        <div class="page-item">
+            <h3>Daniel 7: Der Stein und die zehn Hörner</h3>
+            <p>Was symbolisiert der Stein in Nebukadnezars Traum? Wer sind die zehn Hörner? 
+            Vergleich verschiedener Auslegungen.</p>
+            <a href="daniel-7-interpretation.html">→ Zur Erklärung</a>
+        </div>
+        
+        <div class="page-item">
+            <h3>Theologische Grundbegriffe</h3>
+            <p>Was bedeutet Dispensationalismus? Was ist Amillennialismus? 
+            Einfache Erklärungen der wichtigsten theologischen Fachbegriffe.</p>
+            <a href="grundbegriffe.html">→ Zur Erklärung</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Diese Seite wurde mit Liebe erstellt, um theologische Wahrheiten verständlich zu machen.</p>
+        <p>© 2025 Andreas' Theologische Erklärungen</p>
     </div>
 </body>
 </html>
