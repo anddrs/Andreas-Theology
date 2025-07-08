@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pages Assistent für Theologen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container py-16">
+    <h1 class="m-0">🚀 GitHub Pages Assistent für Theologen</h1>
+    <p class="mt-8">Richten Sie Ihre theologischen HTML-Dateien in wenigen Schritten online ein.</p>
+  </header>
+
+  <main class="container flex flex-col gap-16 py-16" id="app">
+
+    <!-- Repository Generator -->
+    <section class="card" id="repo-generator">
+      <div class="card__header flex justify-between items-center">
+        <h2 class="m-0">1. Repository-Name-Generator</h2>
+      </div>
+      <div class="card__body flex flex-col gap-16">
+        <div class="form-group">
+          <label class="form-label" for="username">GitHub Benutzername</label>
+          <input type="text" id="username" class="form-control" placeholder="z. B. martinluther" />
+        </div>
+
+        <div class="form-group">
+          <span class="form-label">Seiten-Typ</span>
+          <div class="flex gap-16">
+            <label class="flex items-center gap-4">
+              <input type="radio" name="siteType" value="user" checked /> Benutzer-Seite <span title="username.github.io" class="status status--info">Root-URL</span>
+            </label>
+            <label class="flex items-center gap-4">
+              <input type="radio" name="siteType" value="project" /> Projekt-Seite <span title="username.github.io/projektname/" class="status status--info">Unterordner</span>
+            </label>
+          </div>
+        </div>
+
+        <div id="project-name-group" class="form-group hidden">
+          <label class="form-label" for="projectName">Repository/Projekt-Name</label>
+          <input type="text" id="projectName" class="form-control" placeholder="z. B. eschatologie" />
+        </div>
+
+        <div class="preview card">
+          <div class="card__body">
+            <h3 class="m-0 mb-8">Vorschau URL 🖥️</h3>
+            <p id="urlPreview" class="mb-8">–</p>
+            <h4 class="m-0 mb-8">Beispiel-Dateien</h4>
+            <ul id="exampleList" class="m-0 px-16"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkliste -->
+    <section class="card" id="checklist-section">
+      <div class="card__header flex justify-between items-center">
+        <h2 class="m-0">2. Schritt-für-Schritt Checkliste</h2>
+        <div class="progress-container" aria-label="Fortschritt">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <span id="progressText" class="ml-8">0 / 5 abgeschlossen</span>
+        </div>
+      </div>
+      <div class="card__body flex flex-col gap-8" id="checklist"></div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="card" id="quick-links">
+      <div class="card__header">
+        <h2 class="m-0">3. Quick Links</h2>
+      </div>
+      <div class="card__body flex gap-16 flex-wrap">
+        <a href="https://github.com" target="_blank" class="btn btn--primary">GitHub.com</a>
+        <a href="https://docs.github.com/pages" target="_blank" class="btn btn--secondary">GitHub Pages Dokumentation</a>
+        <a id="repoLink" href="#" target="_blank" class="btn btn--outline" aria-disabled="true">Ihr Repository</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card" id="faq-section">
+      <div class="card__header">
+        <h2 class="m-0">4. Häufige Fragen (FAQ)</h2>
+      </div>
+      <div class="card__body" id="faq"></div>
+    </section>
+
+    <!-- Ablaufschaubild -->
+    <section class="card" id="diagram-section">
+      <div class="card__header">
+        <h2 class="m-0">Ablauf im Überblick</h2>
+      </div>
+      <figure class="card__body">
+        <img src="https://pplx-res.cloudinary.com/image/upload/v1751915324/pplx_code_interpreter/59bd2da5_l9wjqa.jpg" alt="GitHub Pages Hosting-Prozess" class="diagram-img" />
+        <figcaption class="mt-8">Schaubild: GitHub Pages Hosting-Prozess</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="container py-16">
+    <p class="m-0">© 2025 GitHub Pages Assistent für Theologen</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
